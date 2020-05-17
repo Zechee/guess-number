@@ -1,9 +1,15 @@
 import random
-r = random.randint(1, 100)
+
+start = input('请选择一个起始数字: ')
+end = input('请选择一个中止数字: ')
+start = int(start)
+end = int(end)
+
+r = random.randint(start, end)
 count = 0
 
 while True:
-	num = input('请输入数字(范围1-100): ')
+	num = input('请输入数字: ')
 	num = int(num)
 	count = count + 1
 
